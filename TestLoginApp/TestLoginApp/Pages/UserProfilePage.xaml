@@ -2,7 +2,8 @@
 <ContentPage x:Class="TestLoginApp.Pages.UserProfilePage"
              xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:helpers="clr-namespace:TestLoginApp.Helpers">
+             xmlns:helpers="clr-namespace:TestLoginApp.Helpers"
+             NavigationPage.HasNavigationBar="false">
 
     <ContentPage.Content>
 
@@ -13,7 +14,8 @@
             <Label Text="{Binding MessageText}" />
 
             <!-- Logout link -->
-            <Label Style="{StaticResource BaseLinkStyle}"
+            <Label Margin="0,10"
+                   Style="{StaticResource BaseLinkStyle}"
                    Text="{x:Static helpers:ConstantValues.LogoutLabelText}">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding LogoutAsyncCommand}"

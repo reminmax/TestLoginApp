@@ -42,6 +42,8 @@ namespace TestLoginApp.PageModels
                     return;
                 }
 
+                AppSettings.Token = string.Empty;
+
                 // Navigate back
                 await CoreMethods.PopPageModel();
             }
@@ -65,7 +67,7 @@ namespace TestLoginApp.PageModels
                     return;
                 }
 
-                MessageText = string.Join(",", "Привет", result.Name);
+                MessageText = string.Join(",", ConstantValues.HelloText, result.Name);
             }
             catch (Exception ex)
             {

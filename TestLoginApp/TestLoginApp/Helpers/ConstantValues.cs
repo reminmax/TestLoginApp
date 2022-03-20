@@ -14,6 +14,7 @@
         public static string PasswordPlaceholderText = "Введите пароль";
         public static string DontHaveAnAccountLabelText = "Нет аккаунта?";
         public static string RegisterLabelText = " Зарегистрироваться";
+        public static string HelloText = "Привет";
 
         public static string LoginOrPassIncorrect = "Пользователь с такими данными не найден.";
         public static string NeedActivation = "Необходимо отправить код, отправленный на указанный номер телефона.";

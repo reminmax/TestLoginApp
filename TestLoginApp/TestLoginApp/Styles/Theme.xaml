@@ -37,6 +37,7 @@
     <Style x:Key="BaseLinkStyle"
            TargetType="Label">
         <Setter Property="FontSize" Value="17" />
+        <Setter Property="TextDecorations" Value="Underline" />
         <Setter Property="TextColor" Value="{StaticResource LinkColor}" />
     </Style>
 

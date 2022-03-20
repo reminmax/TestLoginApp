@@ -100,7 +100,7 @@ namespace TestLoginApp.Repository
             if (string.IsNullOrEmpty(token))
                 throw new ArgumentNullException(nameof(token));
 
-            var builder = new UriBuilderExt(string.Concat(_baseUri, ConstantValues.ProfileUri));
+            var builder = new UriBuilderExt(string.Concat(_baseUri, ConstantValues.LogoutUri));
             var uri = builder.Uri;
 
             try
