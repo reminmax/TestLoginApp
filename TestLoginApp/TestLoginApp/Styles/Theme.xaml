@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary x:Class="TestLoginApp.Styles.Theme"
+                    xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:androidSpecific="clr-namespace:Xamarin.CommunityToolkit.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.CommunityToolkit"
+                    xmlns:effects="http://xamarin.com/schemas/2020/toolkit"
+                    xmlns:iOsSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                    xmlns:styles="clr-namespace:TestLoginApp.Styles">
+
+    <ResourceDictionary.MergedDictionaries>
+        <styles:Colors />
+        <styles:Fonts />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!-- Button -->
+    <Style TargetType="Button">
+        <Setter Property="CornerRadius" Value="7" />
+        <Setter Property="HeightRequest" Value="60" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource ButtonColor}" />
+    </Style>
+
+    <!-- Label -->
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="FontFamily" Value="InterRegular" />
+    </Style>
+
+    <Style x:Key="LabelIconStyle"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="FontAwesomeLight" />
+        <Setter Property="FontSize" Value="22" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+
+    <Style x:Key="BaseLinkStyle"
+           TargetType="Label">
+        <Setter Property="FontSize" Value="17" />
+        <Setter Property="TextColor" Value="{StaticResource LinkColor}" />
+    </Style>
+
+    <!-- StackLayout -->
+    <Style TargetType="StackLayout">
+        <Setter Property="Spacing" Value="0" />
+    </Style>
+
+    <Style x:Key="AuthDataStackLayoutStyle"
+           TargetType="StackLayout">
+        <Setter Property="Spacing" Value="5" />
+    </Style>
+
+    <!-- Frame -->
+    <Style TargetType="Frame">
+        <Setter Property="Padding" Value="0" />
+    </Style>
+
+    <Style x:Key="FrameEntryStyle"
+           TargetType="Frame">
+        <Setter Property="CornerRadius" Value="7" />
+        <Setter Property="HeightRequest" Value="60" />
+        <Setter Property="HasShadow" Value="False" />
+        <Setter Property="Padding" Value="20,0" />
+        <Setter Property="BorderColor" Value="{StaticResource PrimaryColor}" />
+    </Style>
+
+    <!-- Grid -->
+    <Style TargetType="Grid">
+        <Setter Property="ColumnSpacing" Value="0" />
+        <Setter Property="RowSpacing" Value="0" />
+        <Setter Property="VerticalOptions" Value="FillAndExpand" />
+        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+    </Style>
+
+    <!-- Entry -->
+    <Style x:Key="BaseEntryStyle"
+           TargetType="Entry">
+        <Setter Property="HeightRequest" Value="60" />
+        <Setter Property="IsSpellCheckEnabled" Value="False" />
+        <Setter Property="Keyboard" Value="Default" />
+        <Setter Property="FontFamily" Value="InterRegular" />
+        <Setter Property="FontSize" Value="{StaticResource EntryFontSize}" />
+        <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource SecondaryColor}" />
+    </Style>
+
+    <Style ApplyToDerivedTypes="True"
+           TargetType="ContentPage">
+        <Setter Property="BackgroundColor" Value="{StaticResource BackgroundColor}" />
+        <Setter Property="iOsSpecific:Page.UseSafeArea" Value="True" />
+        <Setter Property="effects:StatusBarEffect.Color" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="effects:StatusBarEffect.Style" Value="LightContent" />
+        <Setter Property="androidSpecific:NavigationBarEffect.Color" Value="{StaticResource PrimaryColor}" />
+        <Setter Property="androidSpecific:NavigationBarEffect.Style" Value="LightContent" />
+    </Style>
+
+</ResourceDictionary>

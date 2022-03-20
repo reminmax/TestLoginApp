@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application x:Class="TestLoginApp.App"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:TestLoginApp.Converters"
+             xmlns:styles="clr-namespace:TestLoginApp.Styles">
+    <Application.Resources>
+
+        <ResourceDictionary>
+
+            <!-- Converters -->
+            <converters:FirstValidationErrorConverter x:Key="FirstValidationErrorConverter" />
+
+            <!-- Merged dictionaries -->
+            <ResourceDictionary.MergedDictionaries>
+                <styles:Theme />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

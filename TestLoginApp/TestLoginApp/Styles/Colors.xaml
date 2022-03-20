@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary x:Class="TestLoginApp.Styles.Colors"
+                    xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="PrimaryColor">#000000</Color>
+    <Color x:Key="SecondaryColor">#A9A9A9</Color>
+
+    <Color x:Key="LinkColor">#6B32E3</Color>
+    <Color x:Key="ButtonColor">#32E388</Color>
+
+    <Color x:Key="BackgroundColor">#F4F7F7</Color>
+    <Color x:Key="FailColor">#D04C41</Color>
+
+    <Color x:Key="ErrorMessageBackgoundColor">#F4DBD4</Color>
+    <Color x:Key="ErrorMessageTextColor">#AC5856</Color>
+
+</ResourceDictionary>
